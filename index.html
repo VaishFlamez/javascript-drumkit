@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>Drum Kit</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <h1>PRESS THE LETTER OR CLICK THE BUTTON TO PLAY THE DRUMS ENJOYYYYY</h1>
+        <h2>DRUM KIT </h2>
+    </div>
+    <div class="keys">
+        <div data-key="65" class="key" onclick="playAudio('sounds/clap.wav'); classList.add('playing')">
+            <kbd>A</kbd>
+            <span class="sound">clap</span>
+        </div>
+        <div data-key="83" class="key" onclick="playAudio('sounds/hihat.wav'); classList.toggle('playing')">
+            <kbd>S</kbd>
+            <span class="sound">hihat</span>
+        </div>
+        <div data-key="68" class="key" onclick="playAudio('sounds/kick.wav'); classList.toggle('playing')">
+            <kbd>D</kbd>
+            <span class="sound">kick</span>
+        </div>
+        <div data-key="70" class="key" onclick="playAudio('sounds/openhat.wav'); classList.toggle('playing')">
+            <kbd>F</kbd>
+            <span class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key" onclick="playAudio('sounds/boom.wav'); classList.toggle('playing')">
+            <kbd>G</kbd>
+            <span class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key" onclick="playAudio('sounds/ride.wav'); classList.toggle('playing')">
+            <kbd>H</kbd>
+            <span class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key" onclick="playAudio('sounds/snare.wav'); classList.toggle('playing')">
+            <kbd>J</kbd>
+            <span class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key" onclick="playAudio('sounds/tom.wav'); classList.toggle('playing')">
+            <kbd>K</kbd>
+            <span class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key" onclick="playAudio('sounds/tink.wav'); classList.toggle('playing')">
+            <kbd>L</kbd>
+            <span class="sound">tink</span>
+        </div>
+    </div>
+
+
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+
+</body>
+
+</html>
